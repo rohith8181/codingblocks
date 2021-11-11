@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- general css file  -->
+        <link rel="stylesheet" href="../css/general.css">
+
+        <!-- regestration css file  -->
+        <link rel="stylesheet" href="../css/regestration.css">
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+        <!-- fontawesome link  -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <title>Coding Blocks || Admin </title>
+    </head>
+    <body>
+
+        <div id="admin" class="regestration">
+            <div class="alert alert-dismissible fade show font2" role="alert" id="alertInternalError">
+                <strong class="font1">Internnal Error !</strong> Sorry not able to get your acccount please try after some time.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-dismissible fade show font2" role="alert" id="alertIncomplete">
+                <strong class="font1">Fill Completely !</strong> Itsnecessary to fill al the details
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-dismissible fade show font2" role="alert" id="alertInvalidCredentials">
+                <strong class="font1">InvalidCredentials !</strong> email or password is incorrect.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="container py-3 d-flex align-items-center justify-content-center">
+                <div class="box">
+                    <center class="logo">
+                        <a href="/">
+                            <img src="../images/logo.png" alt="Coding Blocks">
+                        </a>
+                    </center>
+                    <form action="">
+                        <label for="fullname">Email Id</label><br>
+                        <div class="d-flex justify-content-center align-items-center inputBox">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email"><br>
+                        </div>
+
+                        <label for="fullname">Password</label><br>
+                        <div id="password" class="d-flex justify-content-center align-items-center inputBox">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password">
+                            <div id="showHide">
+                                <i class="fas fa-eye-slash"></i>
+                            </div>
+                        </div>
+
+                        <button id="submit" class="btn bgBtn solidBtn">Log In</button>
+                    </form>
+                    <center style="margin-top: 10px;">
+                        <h3 class="basicText font1 text-center">For Admins Only</h3>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <script src="../js/adminLogin.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

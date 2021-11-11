@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Blocks</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- general css file  -->
+    <link rel="stylesheet" href="../css/general.css">
+
+    <!-- home css file  -->
+    <link rel="stylesheet" href="../css/home.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawesome link  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<body class="night font2">
+
+    <nav>
+        <div>
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="/" class="logo">
+                    <img src="../images/logo.png" alt="Coding Blocks">
+                </a>
+                <div class="navForBig align-items-center">
+                    <input type="text" placeholder="serach article here" name="searchBar" autocomplete="off">
+                    <div id="searchBox">
+                        <!-- from js file navFoot  -->
+                    </div>
+                    <div id="navAuth">
+                        <a href="/login"><div class="ms-1 btn outlineBtn">Get Started</div></a>
+                    </div>
+                </div>
+                <div class="navForSmall flex-column" id="toggleButton">
+                    <div class="toggleLine"></div>
+                    <div class="toggleLine"></div>
+                    <div class="toggleLine"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav2">
+        <div>
+            <ul id="categoryUl" class="mx-auto mb-0 list-unstyled justify-content-center align-items-center navForBig">
+                <!-- from javascrjipt home.js file -->
+            </ul>
+            <div class="navForSmall">
+                <input type="text" placeholder="serach article here" class="w-100" name="searchBar" autocomplete="off">
+                <div id="searchBoxForSmall">
+                    <!-- from js file navFoot  -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="toggleMenu" class="d-none">
+        <div id="toggleNavAuth" class="px-2">
+            <div class="btn bgBtn solidBtn">get Started</div>
+        </div>
+        <hr>
+        <div class="accordion" id="accordionExample">
+            <!-- from home.js file            -->
+        </div>
+    </nav>
+
+    <section>
+        <div class="container my-5">
+            <h2 class="basicText font1">Copyright Information</h2><br>
+            <div>
+                This to Affirm that GeeksforGeeks is the Copyright Holder/ Owner of the Contents 
+                (such as Videos, Photos, Visuals, Questions or any other Literary work) which are Created 
+                or Published on its website under the Copy Right Act 1957 and that any Unauthorized Transmission, 
+                Publication or Usage of the said Contents without any prior knowledge or written permission shall
+                 be treated as the illegal use of the same, which is strictly prohibited under the eyes of Law. 
+                 Where the same shall be treated as Infringement of our rights inferred by the Copy Right Act, 
+                 therefore shall attract appropriate Legal Proceedings against the said Infringer without any prior 
+                 information.
+            </div><br>
+            <div>
+                Please note that by claiming copyright infringement you are initiating a legal process, kindly be sure to consider whether fair use, fair dealing, or a similar exception 
+                to copyright apply before you report
+            </div><br>
+            <div>
+                This is about the spirit of fair attribution. Attribution to the website, content and more importantly, to the individuals who so generously contributed their time 
+                to create that content in the first place!
+            </div><br>
+            <div>
+                By “directly”, we mean each hyperlink must point directly to our domain in standard HTML visible even with JavaScript disabled, and not use a tiny url or any other form of obfuscation or redirection. Furthermore, 
+                the links must not be nofollowed.
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer1">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center position-relative">
+                <a href="/" class="logo">
+                    <img src="../images/logo.png" alt="Coding Blocks">
+                </a>      
+                <div class="d-flex socialMedia my-2">
+                    <a href="https://twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="d-flex" id="pages">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/copyright">Copyright</a>
+                    <a href="/contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer2">
+        <div class="text-center">&copy;All rights are reserved by Coding Blocks</div>
+    </footer>
+
+
+    <script src="../js/navFoot.js"></script>
+    <script src="../js/authenticate.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
