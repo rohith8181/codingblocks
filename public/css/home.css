@@ -1,0 +1,216 @@
+:root {
+    --color1: #02a800;
+}
+a:hover,a:focus{
+    color: var(--color1);
+    text-decoration: none;
+}
+
+nav{
+    padding: 7px 10px;
+}
+nav .profile{
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 39px;
+    width: 39px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+nav i{
+    font-size: 21px;
+    color: gray;
+}
+.profile .dropdown-toggle::after {
+    display:none;
+}
+nav input{
+    background: transparent;
+    border: 1px solid white;
+    height: 36px;
+    width: 246px;
+    padding: 0px 17px;
+    color: white;
+    border-radius: 3px;
+}
+.nav2{
+    background: #121111;
+    border-top: 1px solid #ffffff1f;
+}
+nav .dropdown-menu.show {
+    background: rgb(9 9 9 / 83%);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+nav a:hover,.nav2 a:active,nav a:focus{
+    color: var(--color1);
+}
+.category{
+    margin: 0px 20px;
+}
+.navForBig{
+    display: flex;
+}
+.navForSmall{
+    display: none;
+    cursor: pointer;
+}
+.toggleLine{
+    height: 5px;
+    width: 34px;
+    background: white;
+    margin: 3px 0px;
+}
+
+#toggleMenu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 70%;
+    background: #000000e8;
+    overflow-y: scroll;
+    padding: 27px 0px;
+}
+.accordion-button.collapsed {
+    color: white;
+}
+.accordion-button.collapsed:hover {
+    color: var(--color1);
+}
+.accordion-button:not(.collapsed) {
+    color: darkgreen;
+}
+.accordion-body {
+    background-color: #0d0d0d;
+    padding: 0px;
+}
+.accordion-button::after {
+    background-image: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+.list-unstyled{
+    margin-bottom: 0px;
+}
+.accordion li{
+    padding: 10px 18px;
+    border-bottom: 1px solid #ffffff36;
+}
+.accordion-button:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+
+#intro{
+    background-image: url(../images/homePage.jpg);
+    background-color: rgb(7 18 0 / 83%);
+    background-blend-mode: soft-light;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center 67%;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    padding-top: 98px;
+}
+#intro h1{
+    font-weight: 900;
+}
+
+#searchBox{
+    position: absolute;
+    width: 246px;
+    background: #1f1e1e;
+    top: 53px;
+    padding: 12px 21px;
+    border-radius: 5px;
+    z-index: 100;
+}
+#searchBoxForSmall{
+    position: absolute;
+    width: 97.4%;
+    background: #1f1e1e;
+    top: 117px;
+    padding: 12px 21px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+#searchBox a{
+    margin: 5px 0px;
+    font-size: 15px;
+}
+#learn img{
+    width: 80%;
+}
+
+.footer1{
+    padding: 20px 10px;
+    background-color: rgb(34, 33, 33);
+}
+.footer2{
+    padding: 20px 10px;
+    background-color: var(--color1)
+}
+footer i{
+    font-size: 20px;
+}
+.socialMedia i{
+    color: gray;
+    font-size: 26px;
+    margin: 10px 10px;
+    transition: color 0.5s;
+}
+.socialMedia i:hover,.socialMedia i:focus{
+   color: var(--color1);
+}
+
+footer .col2 a,footer .col3 a{
+    color: gray;
+    margin: 3px 0px;
+    text-decoration: none;  
+}
+footer .col2 a:hover,footer .col3 a:hover{
+    color: var(--color1);
+}
+.adress i{
+    margin-top: 11px;
+    margin-right: 16px;
+    margin-left: 7px;
+}
+.mail i{
+    margin-right: 16px;
+    margin-left: 7px;
+    margin-top: 4px;
+}
+#pages a{
+    margin: 0px 15px;
+    text-decoration: none;
+    color: gray;
+}
+#pages a:hover{
+    color: var(--color1);
+}
+
+
+@media only screen and (max-width:768px){
+    .navForBig{
+        display: none;
+    }
+    .navForSmall{
+        display: flex;
+    }
+}
+
+

@@ -1,0 +1,68 @@
+#article{
+    background: #222121;
+    padding: 10px 15px;
+    border-radius: 7px;
+    line-height: 30px;
+    width: 880px;
+    margin: auto;
+    text-align: justify;
+}
+#edit{
+    border: none;
+    background: #5a5858;
+    color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#article img{
+    margin-top: 20px;
+    margin-bottom: 14px;
+    width: 80%;
+}
+h1{
+    color: green;
+    font-weight: 900;
+}
+textarea{
+    background: #2e2d2d;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+}
+.userCommentPhoto{
+    background: #4d4b4b;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 11px;
+}
+.userCommentPhoto i{
+    font-size: 19px;
+    color: #b0abab;
+}
+
+
+@media only screen and (max-width:992px){
+    #article{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:769px){
+    #article{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:576px){
+    #article img{
+        width: 100%;
+    }
+}

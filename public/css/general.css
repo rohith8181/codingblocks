@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --color1: #02a800;
+    --font1: 'Playfair Display', serif;
+    --font2: 'Hina Mincho', serif;
+}
+.font1{
+    font-family: var(--font1);
+}
+.font2{
+    font-family: var(--font2);
+}
+.basicBg{
+    background-color: var(--color1);
+}
+.basicText{
+    color: var(--color1);
+}
+.solidBtn{
+    background: var(--color1);
+    color: white;
+    border: 2px solid var(--color1);
+}
+.solidBtn:hover{
+    background: rgb(0, 65, 0);
+    color: white;
+    border: 2px solid rgb(0, 65, 0);
+}
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.outlineBtn{
+    background: transparent;
+    color: var(--color1);
+    border: 2px solid var(--color1);
+}
+.outlineBtn:hover,.outlineBtn:focus{
+    background: var(--color1);
+    color: white;
+}
+.bgBtn{
+    width: 100%;
+}
+
+.generalTextColor{
+    color: black;
+}
+a,button{
+    font-family: var(--font1);
+}
+
+
+
+
+.logo img{
+    width: 260px;
+    cursor: pointer;
+}
+@media only screen and (max-width:576px){
+    .logo img{
+        width: 160px;
+    }
+}
+
+
+.night{
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+.night .textColor{
+    color: white;
+}
+.textColor{
+    color: black;
+}
+
+
